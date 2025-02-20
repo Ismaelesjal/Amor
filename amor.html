@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem e Vídeo no HTML</title>
+    <style>
+        /* Estilo do corpo da página */
+        body {
+            display: flex;
+            flex-direction: column; /* Organiza os elementos verticalmente */
+            align-items: center; /* Centraliza os elementos na horizontal */
+            justify-content: center; /* Centraliza os elementos na vertical */
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #000000; /* Cor de fundo clara */
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Estilo do título */
+        h1 {
+            color: rgb(240, 60, 60); /* Define a cor do texto */
+            font-size: 30px; /* Define o tamanho do título */
+            margin-bottom: 20px; /* Espaço abaixo do título */
+           
+        }
+
+        /* Caixa de texto principal */
+        .text-box {
+            color: rgb(12, 221, 248); /* Cor do texto */
+            font-size: 18px; /* Tamanho do texto */
+            border: 2px solid rgb(59, 226, 248); /* Borda azul */
+            padding: 10px; /* Espaçamento interno */
+            border-radius: 10px; /* Borda arredondada */
+            background-color: #f0f8ff; /* Fundo azul claro */
+            width: fit-content; /* Ajusta a largura ao conteúdo */
+            margin-bottom: 20px; /* Espaço abaixo da caixa */
+            margin-left: px; /* Move a caixa para a esquerda */
+        }
+
+        /* Container principal com layout horizontal */
+        .content {
+            display: flex;
+            align-items: center; /* Alinha os itens verticalmente */
+            justify-content: center; /* Centraliza os itens na horizontal */
+            gap: 30px; /* Espaço entre os elementos */
+            flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+        }
+
+        /* Estilo da imagem */
+        .image-container img {
+            width: 300px; /* Define a largura da imagem */
+            border-radius: 10px; /* Bordas arredondadas */
+            box-shadow: 10px 10px 15px rgb(243, 7, 7); /* Adiciona sombra */
+        }
+
+         /* Estilo da imagem 1 2 3*/
+         .gallery img {
+            width: 300px; /* Define a largura da imagem */
+            border-radius: 10px; /* Bordas arredondadas */
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+            box-shadow: 10px 10px 15px rgb(243, 7, 7); /* Adiciona sombra */
+            padding: 15px; /* Espaçamento interno */
+            border-radius: 25px; /* Bordas arredondadas */
+            width: 300px; /* Largura do vídeo */
+            height: 400px; /* Altura do vídeo */
+        }
+
+        /* Caixa de texto secundária */
+        .text-box_1 {
+            color: rgb(12, 221, 248); /* Cor do texto */
+            font-size: 16px; /* Tamanho do texto */
+            border: 2px solid rgb(59, 226, 248); /* Borda azul */
+            padding: 15px; /* Espaçamento interno */
+            border-radius: 10px; /* Bordas arredondadas */
+            background-color: #f0f8ff; /* Fundo azul claro */
+            width: 300px; /* Define a largura */
+            text-align: center; /* Centraliza o texto */
+            box-shadow: 10px 10px 15px rgb(243, 7, 7); /* Adiciona sombra */
+        }
+
+        /* Estilo do vídeo */
+        .video-container iframe {
+            width: 350px; /* Largura do vídeo */
+            height: 400px; /* Altura do vídeo */
+            border-radius: 10px; /* Bordas arredondadas */
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+            box-shadow: 10px 10px 15px rgb(243, 7, 7); /* Adiciona sombra */
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 800px) {
+            .content {
+                flex-direction: column; /* Muda para coluna quando a tela for pequena */
+                gap: 20px; /* Reduz o espaço entre os elementos */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título principal -->
+    <h1>A melhor coisa que me aconteceu nos últimos 2 anos</h1>
+
+    <!-- Caixa de texto principal -->
+    <div class="text-box">
+        Eu amo muito você ❤️
+    </div>
+    
+    <!-- Layout horizontal -->
+    <div class="content">
+        
+        <!-- Imagem à esquerda -->
+        <div class="image-container"> 
+            <img src="https://i.postimg.cc/ZRLBQJzx/Imagem-Whats-App-2025-02-13-s-17-54-53-21ec8a0d.jpg"  
+                 alt="Imagem Online">
+        </div>
+
+        <!-- Texto no meio -->
+        <div class="text-box_1">
+            <!-- Texto da mensagem de São Valentim -->
+            Feliz São Valentin amor, vou rezar para que possamos repetir 
+            esta data muitas vezes juntos. Saiba que tu 
+            és muito importante na minha vida, desde as discussões até os
+            momentos em que nos perdemos nos nossos beijos e abraços. 
+            <br><br>
+            Amo estar contigo. Mesmo quando estou chateado, fico feliz só de pensar 
+            em você. Se pudesses ver o meu sorriso nesse momento, só Deus sabe o
+            quanto eu te amo e o quanto eu quero colocar um anel no seu dedo, te 
+            chamar de minha esposa, ser seu marido, amigo e companheiro. Sei que ainda 
+            vai demorar um pouquinho, mas ainda vai chegar o dia em que não iremos
+            precisar nos despedir no final do dia. 
+            <br><br>
+            <strong> 
+                Eu te amo! ❤️
+            </strong>
+        </div>
+
+        <!-- Vídeo à direita -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/MEES6qkXCSg" 
+                    frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+        <div class="gallery">
+            <img src="https://i.postimg.cc/KjKb0ZVk/Imagem-Whats-App-2025-02-13-s-23-12-31-2da25f8d.jpg" alt="Imagem 1">
+            <img src="https://i.postimg.cc/ZKhzQfj0/Imagem-Whats-App-2025-02-13-s-23-12-30-87afa971.jpg" alt="Imagem 2">
+            <img src="https://i.postimg.cc/nLknzSBz/Imagem-Whats-App-2025-02-13-s-23-12-19-1c922cb8.jpg" alt="Imagem 3">
+        
+        </div>
+    </div>
+</body>
+</html>
